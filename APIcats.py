@@ -13,7 +13,7 @@ cat_response: requests.Response
 cat_link: str
 
 
-while counter < 100:
+while True:
     print('attempt =', counter)
     updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}').json()
 
