@@ -1,10 +1,16 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Загружает переменные из .env
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+
 import requests
 import time
 
 
 API_URL = 'https://api.telegram.org/bot'
 API_CATS_URL = 'https://api.thecatapi.com/v1/images/search'
-BOT_TOKEN = '7911445875:AAG1Jbmkjwf0OsJ5z1IbVyb6KMqk2CuxOr8'
+BOT_TOKEN = TOKEN
 ERROR_TEXT = 'Здесь должна была быть картинка с котиком :('
 
 offset = -2
