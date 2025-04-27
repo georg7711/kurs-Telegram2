@@ -46,7 +46,7 @@ async def send_echo(message: Message):
 # Регистрируем хэндлеры
 dp.message.register(process_start_command, Command(commands='start'))
 dp.message.register(process_help_command, Command(commands='help'))
-dp.message.register(send_photo_echo, F.content_type == ContentType.PHOTO)
+dp.message.register(send_photo_echo, F.photo)
 dp.message.register(send_echo)
 
 if __name__ == '__main__':
