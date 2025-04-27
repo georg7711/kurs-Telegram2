@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()  # Загружает переменные из .env
-TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN1")
 import requests
 import time
 
