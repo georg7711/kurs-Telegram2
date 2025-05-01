@@ -22,6 +22,7 @@ LEXICON: dict[str, str] = {
 }
 
 LEXICON_COMMANDS: dict[str, str] = {
+    '/start': 'Перезапустить бота',
     '/beginning': 'В начало книги',
     '/continue': 'Продолжить чтение',
     '/bookmarks': 'Мои закладки',
